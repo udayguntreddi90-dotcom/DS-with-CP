@@ -1,25 +1,40 @@
-import java.util.*;
-public class Task1 {
+class Main {
     public static void main(String[] args) {
-       // Static D & I  
-        int[] n={1,2,3,4,5};
-        System.out.println(n[0]);
+        System.out.println("Try programiz.pro");
+        
+        int a=4;
+        
+        // static d&i
+        
+        int[] n={1,3,5,7};
+        System.out.println(n[3]);
         System.out.println(n.length);
+        
+        for(int i=0;i<n.length;i++){
+           System.out.println(n[i]);
+        }
+        
+        
+        // using new key word 
+        int[] n1= new int[]{1,3,5,7,5,7,8};
+        System.out.println(n1[3]);
+        System.out.println(n1.length);
+        
+        for(int i=0;i<n1.length;i++){
+           System.out.println(n1[i]);
+        }
+        
+        // dynamic allocation 
+         int[] n2= new int[10];
+         n2[0]=40;
+      n2[1]=100;
+      n2[n2.length-1]=900;
+      
+      
+      for(int i=0;i<n2.length;i++){
+           System.out.println(n2[i]);
+        }
+        
+    }
 
-         for(int i=0;i<n.length;i++){
-            System.out.print(n[i]+" ");
-         }
-
-         // key word
-
-         int[] a= new int[] {1,2,3,4,5};
-            for(int i=0;i<a.length;i++){
-                System.out.print(a[i]+" ");
-            }
-             int[] b= new int[10];
-
-             b[0]=10;
-             b[1]=20;
-             for(int i=0;i<b.length;i++){
-                System.out.print(n2[i]+" ");
-             }}
+}
